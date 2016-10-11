@@ -1,8 +1,12 @@
-function chatCtrl() {
-    var vm = this;
+(function () {
 
-    vm.test = 'Same text';
-}
+    function chatCtrl() {
+        var vm = this;
 
-angular.module('cbsChat', [])
-    .controller('chatCtrl', [chatCtrl]);
+        vm.test = 'Same text';
+    }
+
+    angular.module('cbsChat', [])
+        .controller('chatCtrl', [chatCtrl]);
+}());
+
