@@ -1,7 +1,80 @@
 @import vars
 
-h1
-  color: $color
+body
+	font-family: sans-serif
 
+.chat-page
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+
+.chat-window
+	width: 70%
+	box-shadow: 0 5px 30px -10px #000
+	border-radius: 10px
+	overflow: hidden
+.chat-header,
+.chat-footer
+	display: flex
+	justify-content: space-between
+	box-shadow: 0 0px 20px -5px #000
+	padding: 20px 30px
+.chat-header
+	display: flex
+	justify-content: space-between
+
+.chat-header__author
+	font-weight: 700
+	font-size: 18px
+
+.chat-body
+	height: 400px
+	overflow-y: scroll
+	padding: 20px
+
+.messages
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.massage
+	background-color: $light
+	border-radius: 10px
+	padding: 10px
+	margin-bottom: 10px
+	border: 1px solid #eee
+	width: 80%
+	float: left
+	list-style-type: none
+
+.massage--mine
+	float: right
+	color: #fff
+	background-color: $mainColor
+
+.message_foto
+	float: left
+	width: 30px
+	border-radius: 50%
+	border: solid 2px #fff
+	margin-right: 10px
+
+.massege__author
+	margin-top: 10px
+	display: block
+	font-size: 15px
+
+.massage__text
+	margin-top: 20px
+
+.chat-footer
+	textarea
+		width: 70%
+		padding: 10px
+		border: none
+		box-shadow: 0 0 10px -5px #000
+		border-radius: 10px
+		outline: none
 
 

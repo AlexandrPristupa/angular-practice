@@ -36,7 +36,7 @@ gulp.task('build', function () {
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function () {

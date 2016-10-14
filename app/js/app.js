@@ -1,3 +1,5 @@
+angular.module('cbsChat', ['firebase']);
+
 var config = {
     apiKey: "AIzaSyCrPVWKMb8bQZXWrWQOxd7mMhWi7tYd7o0",
     authDomain: "cbschat-80ef3.firebaseapp.com",
@@ -7,4 +9,3 @@ var config = {
 };
 firebase.initializeApp(config);
 
-angular.module('cbsChat', []);
